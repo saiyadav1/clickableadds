@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#header-sticky.header-sticky {
+  @apply fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50;
+}
+
+.case-swiper .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}

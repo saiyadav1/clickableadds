@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Simple ways to Optimize your Website For SEO",
+    "category": "SEO Analysis",
+    "image": "/assets/img/blog/blog-1-bg-1.jpg",
+    "author": "Nathalie Grossman",
+    "authorImg": "/assets/img/blog/comments/blog-avatar-1.png",
+    "date": "Aug 03, 2023",
+    "slug": "optimize-website-seo",
+    "excerpt": "Master the art of search engine optimization with these actionable steps to boost your rankings.",
+    "tags": ["SEO", "Web Traffic", "Optimization"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "In today's digital landscape, SEO is no longer just an option; it's a necessity for any business looking to grow. Optimization starts with understanding how search engines crawl your site."
+      },
+      {
+        "type": "heading",
+        "text": "1. Prioritize Mobile-First Indexing"
+      },
+      {
+        "type": "paragraph",
+        "text": "With more users browsing on mobile than ever before, Google now prioritizes the mobile version of your website for indexing and ranking."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Trend of Marketing With Tiktok, Should or not?",
+    "category": "Marketing",
+    "image": "/assets/img/blog/blog-1-bg-2.jpg",
+    "author": "Jason Responsen",
+    "authorImg": "/assets/img/blog/comments/blog-avatar-2.png",
+    "date": "Mar 16, 2023",
+    "slug": "marketing-with-tiktok",
+    "excerpt": "Is TikTok right for your brand? Explore the pros and cons of the world's fastest-growing social platform.",
+    "tags": ["Social Media", "TikTok", "Marketing Strategy"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "TikTok has transformed from a Gen-Z dance app into a marketing powerhouse. But does every brand belong there?"
+      },
+      {
+        "type": "heading",
+        "text": "Understanding the Algorithm"
+      },
+      {
+        "type": "paragraph",
+        "text": "Unlike Instagram, TikTok's algorithm is based strictly on interest rather than social graphs, meaning your content can go viral even with zero followers."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "How to Increase Your ROI Through scientific SEM?",
+    "category": "SEM Strategy",
+    "image": "/assets/img/blog/blog-1-bg-3.jpg",
+    "author": "Eleanor Fant",
+    "authorImg": "/assets/img/blog/comments/blog-avatar-3.png",
+    "date": "Nov 24, 2023",
+    "slug": "increase-roi-sem",
+    "excerpt": "Stop wasting budget on underperforming ads. Learn the data-driven approach to Search Engine Marketing.",
+    "tags": ["SEM", "PPC", "ROI"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Scientific SEM involves rigorous A/B testing and data analysis to ensure every dollar spent on ads returns maximum value."
+      }
+    ]
+  }
+]
