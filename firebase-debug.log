@@ -1,0 +1,163 @@
+[debug] [2026-02-10T15:36:22.637Z] ----------------------------------------------------------------------
+[debug] [2026-02-10T15:36:22.639Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kiran\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-02-10T15:36:22.639Z] CLI Version:   15.5.1
+[debug] [2026-02-10T15:36:22.639Z] Platform:      win32
+[debug] [2026-02-10T15:36:22.639Z] Node Version:  v22.17.0
+[debug] [2026-02-10T15:36:22.640Z] Time:          Tue Feb 10 2026 21:06:22 GMT+0530 (India Standard Time)
+[debug] [2026-02-10T15:36:22.640Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kiran\projects\clickableadds
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-10T15:36:40.342Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-10T15:36:40.342Z] > authorizing via signed-in user (kiranmsai1@gmail.com)
+[debug] [2026-02-10T15:36:40.344Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:40.344Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:40.346Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clickable-adds [none]
+[debug] [2026-02-10T15:36:40.980Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clickable-adds 200
+[debug] [2026-02-10T15:36:40.980Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clickable-adds {"projectId":"clickable-adds","projectNumber":"914117343196","displayName":"clickable-adds","name":"projects/clickable-adds","resources":{"hostingSite":"clickable-adds"},"state":"ACTIVE","etag":"1_1df9e5e5-8dfe-4645-a2c6-3849b696cbea"}
+[info] i  Using project clickable-adds (clickable-adds) . 
+[info] 
+=== App Hosting Setup
+[debug] [2026-02-10T15:36:41.002Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:41.002Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:41.002Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/clickable-adds/billingInfo [none]
+[debug] [2026-02-10T15:36:42.494Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/clickable-adds/billingInfo 200
+[debug] [2026-02-10T15:36:42.494Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/clickable-adds/billingInfo {"name":"projects/clickable-adds/billingInfo","projectId":"clickable-adds","billingAccountName":"billingAccounts/01CD6B-A88AF9-30492F","billingEnabled":true}
+[debug] [2026-02-10T15:36:42.495Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:42.495Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:42.495Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-10T15:36:42.496Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:44.353Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-10T15:36:44.353Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:44.354Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:44.354Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:44.354Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:44.354Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:44.964Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:44.964Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/firebaseapphosting.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:36:54.995Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.996Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.997Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.997Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.997Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.998Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.998Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.998Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.999Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.999Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.999Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:54.999Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:55.000Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com [none]
+[debug] [2026-02-10T15:36:55.000Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:55.003Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com [none]
+[debug] [2026-02-10T15:36:55.003Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:55.008Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com [none]
+[debug] [2026-02-10T15:36:55.008Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:55.011Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com [none]
+[debug] [2026-02-10T15:36:55.011Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:55.014Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com [none]
+[debug] [2026-02-10T15:36:55.014Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:55.017Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com [none]
+[debug] [2026-02-10T15:36:55.017Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:56.673Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com 200
+[debug] [2026-02-10T15:36:56.673Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:56.673Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.673Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.674Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:56.674Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:56.688Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com 200
+[debug] [2026-02-10T15:36:56.689Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:56.689Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.689Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.689Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:56.689Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:56.693Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com 200
+[debug] [2026-02-10T15:36:56.693Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:56.693Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.693Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.693Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:56.693Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:56.696Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com 200
+[debug] [2026-02-10T15:36:56.696Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:56.696Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.696Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.696Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:56.696Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:56.716Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com 200
+[debug] [2026-02-10T15:36:56.717Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:56.717Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.717Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.717Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:56.717Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:56.788Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com 200
+[debug] [2026-02-10T15:36:56.789Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com [omitted]
+[debug] [2026-02-10T15:36:56.789Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.789Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:36:56.790Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com:enable [none]
+[debug] [2026-02-10T15:36:56.790Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com:enable  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:36:57.151Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:57.151Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/run.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:36:57.168Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:57.169Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:36:58.268Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:58.268Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/secretmanager.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:36:58.293Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:58.293Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:36:58.358Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:58.358Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/iam.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:36:58.421Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com:enable 200
+[debug] [2026-02-10T15:36:58.421Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clickable-adds/services/developerconnect.googleapis.com:enable [omitted]
+[debug] [2026-02-10T15:37:08.435Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:08.435Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:08.436Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts/firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-02-10T15:37:08.436Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts/firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com:testIamPermissions  x-goog-user-project=clickable-adds
+[debug] [2026-02-10T15:37:08.436Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts/firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-02-10T15:37:10.156Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts/firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com:testIamPermissions 404
+[debug] [2026-02-10T15:37:10.156Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts/firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2026-02-10T15:37:10.158Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:10.158Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:10.158Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts [none]
+[debug] [2026-02-10T15:37:10.158Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-02-10T15:37:10.973Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts 200
+[debug] [2026-02-10T15:37:10.974Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/clickable-adds/serviceAccounts [omitted]
+[debug] [2026-02-10T15:37:10.975Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:10.975Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:10.975Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:getIamPolicy [none]
+[debug] [2026-02-10T15:37:12.590Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:getIamPolicy 200
+[debug] [2026-02-10T15:37:12.590Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:getIamPolicy {"version":1,"etag":"BwZKegaAEgU=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:914117343196@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-914117343196@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-914117343196@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:914117343196-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-914117343196@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:kiranmsai1@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-914117343196@serverless-robot-prod.iam.gserviceaccount.com"]}]}
+[debug] [2026-02-10T15:37:12.591Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:12.592Z] Checked if tokens are valid: true, expires at: 1770739798604
+[debug] [2026-02-10T15:37:12.592Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:setIamPolicy [none]
+[debug] [2026-02-10T15:37:12.592Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:setIamPolicy {"policy":{"version":1,"etag":"BwZKegaAEgU=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:914117343196@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-914117343196@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-914117343196@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:914117343196-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-914117343196@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@clickable-adds.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:kiranmsai1@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-914117343196@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-02-10T15:37:13.366Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:setIamPolicy 400
+[debug] [2026-02-10T15:37:13.366Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clickable-adds:setIamPolicy {"error":{"code":400,"message":"Service account firebase-app-hosting-compute@clickable-adds.iam.gserviceaccount.com does not exist.","status":"INVALID_ARGUMENT"}}
+[warn] !  Your App Hosting compute service account is still being provisioned in the background. If you encounter an error, please try again after a few moments. 
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
+[debug] [2026-02-10T15:38:11.254Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\kiran\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1132:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:530:35)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+[error] 
+[error] Error: An unexpected error has occurred.

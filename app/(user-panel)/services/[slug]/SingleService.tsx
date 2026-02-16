@@ -1,17 +1,34 @@
 "use client";
 
-import servicesData from "@/data/services.json";
-import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, Zap, Trophy, ShieldCheck, Rocket } from "lucide-react";
+import { ArrowRight, Zap, Trophy, ShieldCheck, Rocket } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = servicesData.find((s) => s.slug === params.slug);
 
-  if (!service) notFound();
+type Service = {
+  id: number;
+  slug: string;
+  title: string;
+  icon: string;
+  ogImage?: string; 
+  color: string;
+  bg: string;
+  shadow: string;
+  shortDesc: string;
+  longDesc: string;
+  features: string[];
+  stats: {
+    label: string;
+    value: string;
+  };
+};
 
+type Props = {
+  service: Service;
+};
+
+export default function SingleService({ service }: Props) {
   return (
     <main className="bg-[#FAFAFB] min-h-screen overflow-hidden">
       
@@ -62,7 +79,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               transition={{ duration: 1 }}
               className="relative hidden lg:flex justify-center"
             >
-              <div className={`w-80 h-80 rounded-[4rem] ${service.bg} backdrop-blur-3xl border border-white/10 flex items-center justify-center relative`}>
+              <div className={`w-80 h-80 rounded-[4rem] bg-purple-50/60 backdrop-blur-3xl border border-white/10 flex items-center justify-center relative`}>
                 <Image src={service.icon} alt={service.title} width={180} height={180} className="z-10 brightness-125 drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]" />
                 {/* Floating Orbitals */}
                 <div className="absolute inset-0 border-2 border-dashed border-white/10 rounded-full animate-[spin_20s_linear_infinite]" />

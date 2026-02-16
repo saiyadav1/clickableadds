@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
-export default function ServicesPage() {
+export default function ServiceClient() {
   return (
     <main className="relative min-h-screen bg-[#FAFAFB] overflow-hidden">
       {/* Background Decor */}

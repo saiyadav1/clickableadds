@@ -10,3 +10,14 @@
 .case-swiper .swiper-wrapper {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
+
+@keyframes borderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-borderSpin {
+   animation: borderSpin 4s linear infinite;
+  will-change: transform;
+}

@@ -5,7 +5,7 @@ import BlogCard from "@/components/BlogCard";
 import BlogSidebar from "@/components/BlogSidebar";
 import { motion } from "framer-motion";
 
-export default function BlogPage() {
+export default function BlogPageClient() {
   return (
     <main className="relative min-h-screen bg-[#FAFAFB] overflow-hidden">
       

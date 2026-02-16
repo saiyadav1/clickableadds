@@ -4,7 +4,7 @@ import LocationSection from "@/components/LocationSection";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Globe } from "lucide-react";
 
-export default function ContactPage() {
+export default function ContactClient() {
   return (
     <main className="relative min-h-screen bg-[#FAFAFB] overflow-hidden">
       {/* Background Aesthetic Blobs */}
@@ -117,9 +117,6 @@ export default function ContactPage() {
 
         </div>
       </div>
-
-
-
       <LocationSection />
     </main>
   );
