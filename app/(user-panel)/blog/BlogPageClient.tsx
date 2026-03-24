@@ -12,7 +12,7 @@ export default function BlogPageClient() {
       {/* --- PREMIUM BACKGROUND LAYER --- */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-5%] w-[600px] h-[600px] bg-[#131683]/5 rounded-full blur-[120px]" />
-        <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-blue-400/10 rounded-full blur-[100px]" />
+        <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-slate-400/10 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 left-[15%] w-[800px] h-[800px] bg-indigo-500/5 rounded-full blur-[150px]" />
 
         <div className="absolute inset-0 opacity-[0.15] mix-blend-multiply" 
@@ -31,12 +31,12 @@ export default function BlogPageClient() {
         <div className="max-w-3xl mb-20">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
             <div className="flex items-center gap-3 mb-6">
-              <span className="h-[2px] w-8 bg-blue-600 rounded-full" />
-              <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px]">The Journal</span>
+              <span className="h-[2px] w-8 bg-slate-600 rounded-full" />
+              <span className="text-slate-600 font-black uppercase tracking-[0.3em] text-[10px]">The Journal</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-[#05003b] tracking-tighter leading-[1.1]">
               Insights for the <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Digital Elite.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-indigo-600">Digital Elite.</span>
             </h1>
           </motion.div>
         </div>

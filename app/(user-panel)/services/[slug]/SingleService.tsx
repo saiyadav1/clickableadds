@@ -35,7 +35,7 @@ export default function SingleService({ service }: Props) {
       {/* --- PREMIUM HERO SECTION --- */}
       <section className="relative pt-40 pb-24 bg-[#05003b] overflow-hidden">
         {/* Animated Background Gradients */}
-        <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-[150px] animate-pulse" />
+        <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-slate-600/20 rounded-full blur-[150px] animate-pulse" />
         <div className="absolute -bottom-20 -left-20 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px]" />
 
         <div className="w-[90%] max-w-7xl mx-auto relative z-10">
@@ -46,27 +46,27 @@ export default function SingleService({ service }: Props) {
               transition={{ duration: 0.8 }}
             >
               <nav className="flex items-center gap-4 mb-8">
-                <Link href="/" className="text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] hover:text-white transition-colors">Home</Link>
+                <Link href="/" className="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em] hover:text-white transition-colors">Home</Link>
                 <span className="w-1 h-1 rounded-full bg-slate-500" />
                 <span className="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">Service Detail</span>
               </nav>
 
               <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
                 {service.title.split(' ').map((word, i) => (
-                  <span key={i} className={i === service.title.split(' ').length - 1 ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400" : ""}>
+                  <span key={i} className={i === service.title.split(' ').length - 1 ? "text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-indigo-400" : ""}>
                     {word}{" "}
                   </span>
                 ))}
               </h1>
 
-              <p className="text-xl text-blue-100/60 max-w-xl leading-relaxed mb-10 font-medium">
+              <p className="text-xl text-slate-100/60 max-w-xl leading-relaxed mb-10 font-medium">
                 {service.longDesc}
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <Link 
                 href={"/contact"}
-                className="bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-blue-600/30 transition-all flex items-center gap-3 active:scale-95">
+                className="bg-slate-600 hover:bg-slate-500 text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-slate-600/30 transition-all flex items-center gap-3 active:scale-95">
                   Book a Strategy Call <ArrowRight size={20} />
                 </Link>
               </div>
@@ -93,13 +93,13 @@ export default function SingleService({ service }: Props) {
       <section className="py-32 relative">
         <div className="w-[90%] max-w-7xl mx-auto">
           <div className="mb-20">
-            <h2 className="text-xs font-black uppercase tracking-[0.4em] text-blue-600 mb-4">The Capabilities</h2>
+            <h2 className="text-xs font-black uppercase tracking-[0.4em] text-slate-600 mb-4">The Capabilities</h2>
             <h3 className="text-4xl md:text-5xl font-black text-[#05003b] tracking-tighter">Everything you need <br/> to dominate your market.</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* Feature 1: Large Box */}
-            <div className="md:col-span-8 bg-white p-12 rounded-[3rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:border-blue-200 transition-all">
+            <div className="md:col-span-8 bg-white p-12 rounded-[3rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:border-slate-200 transition-all">
               <div className="space-y-6">
                 <div className={`w-14 h-14 rounded-2xl ${service.bg} flex items-center justify-center ${service.color}`}>
                   <Rocket size={28} />
@@ -127,7 +127,7 @@ export default function SingleService({ service }: Props) {
 
             {/* Bottom Row */}
             <div className="md:col-span-4 bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all">
-               <ShieldCheck className="text-blue-600 mb-6" size={40} />
+               <ShieldCheck className="text-slate-600 mb-6" size={40} />
                <h4 className="text-xl font-black text-slate-900 mb-3">Security First</h4>
                <p className="text-sm text-slate-500 leading-relaxed">Enterprise-grade protection for all your digital assets and user data.</p>
             </div>
@@ -137,10 +137,10 @@ export default function SingleService({ service }: Props) {
                <p className="text-sm text-slate-500 leading-relaxed">Optimized for speed. We ensure your project loads in under 1 second.</p>
             </div>
             <div className="md:col-span-4 bg-[#05003b] p-10 rounded-[3rem] text-white overflow-hidden relative group">
-               <Trophy className="text-blue-400 mb-6 relative z-10" size={40} />
+               <Trophy className="text-slate-400 mb-6 relative z-10" size={40} />
                <h4 className="text-xl font-black mb-3 relative z-10">Market Leader</h4>
-               <p className="text-sm text-blue-200/60 leading-relaxed relative z-10">We help you outpace competitors with data-backed strategies.</p>
-               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-600/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
+               <p className="text-sm text-slate-200/60 leading-relaxed relative z-10">We help you outpace competitors with data-backed strategies.</p>
+               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-slate-600/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function SingleService({ service }: Props) {
       {/* --- THE DELIVERY PROCESS --- */}
       <section className="py-32 bg-white border-y border-slate-100">
         <div className="w-[90%] max-w-7xl mx-auto text-center mb-24">
-          <h2 className="text-xs font-black uppercase tracking-[0.4em] text-blue-600 mb-4">Our Methodology</h2>
+          <h2 className="text-xs font-black uppercase tracking-[0.4em] text-slate-600 mb-4">Our Methodology</h2>
           <h3 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter">The path to excellence.</h3>
         </div>
 
@@ -159,7 +159,7 @@ export default function SingleService({ service }: Props) {
             <div className="absolute top-0 bottom-0 left-[20px] md:left-1/2 w-[2px] bg-slate-100 -translate-x-1/2" />
 
             {[
-              { title: "Discovery & Blueprint", desc: "We map out the entire project lifecycle based on your specific growth goals." },
+              { title: "Discovery & slateprint", desc: "We map out the entire project lifecycle based on your specific growth goals." },
               { title: "Design & Development", desc: "Our elite team builds your solution using cutting-edge tech stacks." },
               { title: "Launch & Optimization", desc: "We deploy and continuously monitor to ensure peak performance." }
             ].map((step, idx) => (
@@ -183,7 +183,7 @@ export default function SingleService({ service }: Props) {
       {/* --- CTA BOTTOM --- */}
    <section className="relative py-40 bg-white overflow-hidden">
         {/* Decorative Path Line */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-gradient-to-b from-slate-100 via-blue-200 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-gradient-to-b from-slate-100 via-slate-200 to-transparent" />
         
         <div className="w-[90%] max-w-5xl mx-auto text-center relative z-10">
           <motion.div
@@ -192,17 +192,17 @@ export default function SingleService({ service }: Props) {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 text-slate-600 text-[10px] font-black uppercase tracking-[0.3em] mb-8">
                <span className="relative flex h-2 w-2">
-                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-400 opacity-75"></span>
+                 <span className="relative inline-flex rounded-full h-2 w-2 bg-slate-600"></span>
                </span>
                The Next Chapter
             </div>
 
             <h2 className="text-5xl md:text-8xl font-black text-[#05003b] tracking-tighter leading-[0.95] mb-12">
               Ready to start a <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 italic">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-indigo-600 italic">
                 new journey?
               </span>
             </h2>
@@ -214,7 +214,7 @@ export default function SingleService({ service }: Props) {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link 
                 href="/contact" 
-                className="group relative bg-[#05003b] text-white px-12 py-6 rounded-3xl font-black text-lg shadow-2xl shadow-blue-900/20 hover:bg-blue-600 hover:-translate-y-2 transition-all duration-300 flex items-center gap-4"
+                className="group relative bg-[#05003b] text-white px-12 py-6 rounded-3xl font-black text-lg shadow-2xl shadow-slate-900/20 hover:bg-slate-600 hover:-translate-y-2 transition-all duration-300 flex items-center gap-4"
               >
                 Begin Your Journey
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:rotate-[-45deg] transition-transform">
@@ -233,7 +233,7 @@ export default function SingleService({ service }: Props) {
         </div>
 
         {/* Floating background element */}
-        <div className="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-blue-50 rounded-full blur-[100px] -z-10" />
+        <div className="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-slate-50 rounded-full blur-[100px] -z-10" />
       </section>
     </main>
   );

@@ -20,13 +20,13 @@ export default function BlogCard({ blog }: { blog: any }) {
         {/* Content */}
         <div className="w-full md:w-[60%] flex flex-col justify-center pr-6">
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-lg">
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-600 bg-slate-50 px-3 py-1 rounded-lg">
               {blog.category || "Growth"}
             </span>
             <span className="text-slate-300 text-xs font-bold">{blog.publishDate}</span>
           </div>
 
-          <h3 className="text-2xl font-bold text-[#05003b] leading-tight mb-4 group-hover:text-blue-600 transition-colors">
+          <h3 className="text-2xl font-bold text-[#05003b] leading-tight mb-4 group-hover:text-slate-600 transition-colors">
             <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
           </h3>
 

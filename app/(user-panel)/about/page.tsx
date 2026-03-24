@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "ClickableAds",
     images: [
       {
-        url: "/og/about.png", 
+        url: "/og/about.png",
         width: 1200,
         height: 630,
         alt: "About ClickableAds",

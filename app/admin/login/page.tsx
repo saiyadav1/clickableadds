@@ -35,16 +35,16 @@ export default function AdminLoginPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#05003b] relative overflow-hidden">
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 rounded-full blur-[120px]" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-slate-600/20 rounded-full blur-[120px]" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/20 rounded-full blur-[120px]" />
 
       <div className="w-full max-w-md z-10 px-6">
         <div className="flex flex-col items-center mb-8">
           <div className="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 mb-4 shadow-2xl">
-            <ShieldCheck className="h-10 w-10 text-blue-400" />
+            <ShieldCheck className="h-10 w-10 text-slate-400" />
           </div>
           <h1 className="text-3xl font-black text-white tracking-tight uppercase">
-            Clickable<span className="text-blue-500">Ad</span>
+            Clickable<span className="text-slate-500">Ad</span>
           </h1>
           <p className="text-slate-400 text-sm font-medium mt-1">
             Management Console
@@ -64,10 +64,10 @@ export default function AdminLoginPage() {
                 Admin Email
               </label>
               <div
-                className={`relative flex items-center transition-all duration-300 rounded-2xl border ${focused === "email" ? "border-blue-500 bg-white/10" : "border-white/5 bg-white/5"}`}
+                className={`relative flex items-center transition-all duration-300 rounded-2xl border ${focused === "email" ? "border-slate-500 bg-white/10" : "border-white/5 bg-white/5"}`}
               >
                 <Mail
-                  className={`absolute left-4 h-5 w-5 transition-colors ${focused === "email" ? "text-blue-500" : "text-slate-500"}`}
+                  className={`absolute left-4 h-5 w-5 transition-colors ${focused === "email" ? "text-slate-500" : "text-slate-500"}`}
                 />
                 <input
                   type="email"
@@ -88,10 +88,10 @@ export default function AdminLoginPage() {
                 Secure Password
               </label>
               <div
-                className={`relative flex items-center transition-all duration-300 rounded-2xl border ${focused === "password" ? "border-blue-500 bg-white/10" : "border-white/5 bg-white/5"}`}
+                className={`relative flex items-center transition-all duration-300 rounded-2xl border ${focused === "password" ? "border-slate-500 bg-white/10" : "border-white/5 bg-white/5"}`}
               >
                 <Lock
-                  className={`absolute left-4 h-5 w-5 transition-colors ${focused === "password" ? "text-blue-500" : "text-slate-500"}`}
+                  className={`absolute left-4 h-5 w-5 transition-colors ${focused === "password" ? "text-slate-500" : "text-slate-500"}`}
                 />
                 <input
                   type="password"
@@ -110,7 +110,7 @@ export default function AdminLoginPage() {
             {/* Action Button */}
             <button
               type="submit"
-              className="group relative w-full overflow-hidden rounded-2xl bg-blue-600 py-4 font-black text-xs uppercase tracking-[0.2em] text-white transition-all hover:bg-blue-500 active:scale-[0.98] shadow-lg shadow-blue-600/20"
+              className="group relative w-full overflow-hidden rounded-2xl bg-slate-600 py-4 font-black text-xs uppercase tracking-[0.2em] text-white transition-all hover:bg-slate-500 active:scale-[0.98] shadow-lg shadow-slate-600/20"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 Login

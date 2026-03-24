@@ -10,7 +10,7 @@ export default function ServiceClient() {
   return (
     <main className="relative min-h-screen bg-[#FAFAFB] overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute top-0 left-[-10%] w-[600px] h-[600px] bg-blue-100/50 rounded-full blur-[120px] -z-10" />
+      <div className="absolute top-0 left-[-10%] w-[600px] h-[600px] bg-slate-100/50 rounded-full blur-[120px] -z-10" />
       <div className="absolute bottom-0 right-[-10%] w-[500px] h-[500px] bg-indigo-100/40 rounded-full blur-[100px] -z-10" />
 
       <div className="relative z-10 w-[90%] max-w-7xl mx-auto pt-40 pb-24">
@@ -22,8 +22,8 @@ export default function ServiceClient() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-3 mb-6"
           >
-            <span className="h-[2px] w-12 bg-blue-600 rounded-full" />
-            <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px]">What We Do</span>
+            <span className="h-[2px] w-12 bg-slate-600 rounded-full" />
+            <span className="text-slate-600 font-black uppercase tracking-[0.3em] text-[10px]">What We Do</span>
           </motion.div>
           
           <motion.h1 
@@ -33,7 +33,7 @@ export default function ServiceClient() {
             className="text-5xl md:text-8xl font-black text-[#05003b] tracking-tighter leading-[1.1] mb-8"
           >
             Digital solutions for the <br /> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Global Elite.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-indigo-600">Global Elite.</span>
           </motion.h1>
 
           <motion.p 
@@ -71,7 +71,7 @@ export default function ServiceClient() {
                 </div>
                 <Link 
                   href={`/services/${service.slug}`}
-                  className="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300"
+                  className="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-slate-600 group-hover:text-white group-hover:border-slate-600 transition-all duration-300"
                 >
                   <ArrowUpRight size={20} />
                 </Link>
@@ -79,7 +79,7 @@ export default function ServiceClient() {
 
               {/* Content */}
               <div className="space-y-4 flex-grow">
-                <h3 className="text-2xl font-black text-[#05003b] group-hover:text-blue-600 transition-colors">
+                <h3 className="text-2xl font-black text-[#05003b] group-hover:text-slate-600 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-slate-500 leading-relaxed text-sm">
@@ -115,18 +115,18 @@ export default function ServiceClient() {
         <div className="mt-32 p-12 md:p-20 bg-[#05003b] rounded-[4rem] relative overflow-hidden text-center">
           <div className="relative z-10 max-w-2xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-6xl font-black text-white leading-tight">Can't find what <br/> you're looking for?</h2>
-            <p className="text-blue-200/60 text-lg leading-relaxed">
+            <p className="text-slate-200/60 text-lg leading-relaxed">
               We specialize in custom engineering. Tell us about your unique challenge and we'll build the solution.
             </p>
             <Link 
               href="/contact" 
-              className="inline-block bg-blue-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-blue-500 transition-all shadow-2xl shadow-blue-600/20"
+              className="inline-block bg-slate-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-slate-500 transition-all shadow-2xl shadow-slate-600/20"
             >
               Request Custom Strategy
             </Link>
           </div>
           {/* Background element */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-blue-400/10 rounded-full blur-[100px]" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-slate-400/10 rounded-full blur-[100px]" />
         </div>
       </div>
     </main>

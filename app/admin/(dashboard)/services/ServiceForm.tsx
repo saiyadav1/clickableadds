@@ -25,9 +25,9 @@ export function ServiceForm({ service = {}, onClose, onSaved }: any) {
     longDesc: service.longDesc ?? "",
     icon: service.icon ?? "",
     ogImage: service.ogImage ?? "",
-    color: service.color ?? "text-blue-600",
-    bg: service.bg ?? "bg-blue-50/60",
-    shadow: service.shadow ?? "hover:shadow-blue-500/20",
+    color: service.color ?? "text-slate-600",
+    bg: service.bg ?? "bg-slate-50/60",
+    shadow: service.shadow ?? "hover:shadow-slate-500/20",
     features: service.features ?? [],
     stats: service.stats ?? { label: "", value: "" },
   });

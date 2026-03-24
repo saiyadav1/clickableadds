@@ -39,7 +39,7 @@ export default function SinglePostClient({
     <main className="relative min-h-screen bg-white">
       {/* Reading Progress */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-blue-600 z-50 origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-slate-600 z-50 origin-left"
         style={{ scaleX }}
       />
 
@@ -48,7 +48,7 @@ export default function SinglePostClient({
         <div className="w-[90%] max-w-4xl mx-auto">
           <Link
             href="/blog"
-            className="text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-blue-600"
+            className="text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-slate-600"
           >
             ← Back to Journal
           </Link>

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Menu, X, Plus, Minus, ArrowRight } from "lucide-react";
+import { ChevronDown, Menu, X, Plus, Minus, ArrowRight, Globe } from "lucide-react";
 
 // Import your dynamic services data
 import servicesData from "@/data/services.json";
@@ -62,13 +62,19 @@ export default function Header() {
               href="/"
               className="relative z-[110] flex items-center shrink-0"
             >
-              <Image
-                src="/assets/img/logo/logo.png"
-                alt="Logo"
-                width={140}
-                height={40}
-                className="h-9 w-auto object-contain"
-              />
+              <div className="relative">
+                {/* Animated gradient border */}
+            
+                {/* Inner background */}
+                <div className="absolute inset-[2px] rounded-full bg-secondary z-0" />  
+                {/* Content */}
+                <div className="relative z-10 flex items-center gap-3 px-6 py-3">
+                  <Globe className="h-6 w-6 text-white" strokeWidth={1.5} />
+                  <span className="font-black text-white">
+                    ClickableAds
+                  </span>
+                </div>
+              </div>
             </Link>
 
             {/* --- DESKTOP NAVIGATION --- */}
@@ -79,13 +85,13 @@ export default function Header() {
                     {!item.dropdown ? (
                       <Link
                         href={item.href}
-                        className="px-6 py-2.5 text-[14px] font-bold text-slate-700 hover:text-blue-600 transition-all rounded-full hover:bg-blue-50/50"
+                        className="px-6 py-2.5 text-[14px] font-bold text-slate-700 hover:text-thirdary transition-all rounded-full hover:bg-slate-50/50"
                       >
                         {item.label}
                       </Link>
                     ) : (
                       <div className="relative">
-                        <button className="flex items-center gap-1.5 px-6 py-2.5 text-[14px] font-bold text-slate-700 group-hover:text-blue-600 transition-all rounded-full group-hover:bg-blue-50/50">
+                        <button className="flex items-center gap-1.5 px-6 py-2.5 text-[14px] font-bold text-slate-600 group-hover:text-thirdary transition-all rounded-full group-hover:bg-slate-50/50">
                           {item.label}
                           <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                         </button>
@@ -104,7 +110,7 @@ export default function Header() {
                               <li key={sub.label}>
                                 <Link
                                   href={sub.href}
-                                  className="flex items-center justify-between rounded-xl px-4 py-3 text-[13px] font-bold text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-all group/item"
+                                  className="flex items-center justify-between rounded-xl px-4 py-3 text-[13px] font-bold text-slate-600 hover:bg-slate-50 hover:text-thirdary transition-all group/item"
                                 >
                                   {sub.label}
                                   <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 transition-all group-hover/item:opacity-100 group-hover/item:translate-x-0" />
@@ -116,7 +122,7 @@ export default function Header() {
                             <li className="mt-2 pt-2 border-t border-slate-50">
                               <Link
                                 href="/services"
-                                className="flex items-center justify-between rounded-2xl px-4 py-4 text-xs font-black uppercase tracking-widest text-white bg-[#05003b] hover:bg-blue-600 transition-all shadow-lg shadow-blue-900/10 group/btn"
+                                className="flex items-center justify-between rounded-2xl px-4 py-4 text-xs font-black uppercase tracking-widest text-white bg-secondary hover:bg-secondary/80 transition-all shadow-lg shadow-slate-900/10 group/btn"
                               >
                                 View All Services
                                 <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
@@ -134,10 +140,9 @@ export default function Header() {
             {/* --- ACTION BUTTONS --- */}
             <div className="hidden md:block relative">
               <div className="relative flex items-center justify-center">
-                {/* 1. The Rotating Container (Must be a square to rotate perfectly) */}
                 <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-full">
                   <motion.div
-                    className="absolute w-[150%] h-[150%]" // Larger than the button to cover corners
+                    className="absolute w-[150%] h-[150%]"
                     animate={{ rotate: 360 }}
                     transition={{
                       repeat: Infinity,
@@ -150,15 +155,10 @@ export default function Header() {
                     }}
                   />
                 </div>
-
-                {/* 2. The Inner Mask (To create the "border" look) */}
-                {/* We use a slightly smaller div to reveal only 2px of the gradient */}
-                <div className="absolute inset-[2px] rounded-full bg-[#05003b] z-0" />
-
-                {/* 3. Actual Button */}
+                <div className="absolute inset-[2px] rounded-full bg-secondary z-0" />  
                 <Link
                   href="/contact"
-                  className="relative z-10 flex items-center gap-2 rounded-full bg-[#05003b] px-7 py-3 text-[13px] font-black uppercase tracking-widest text-white hover:bg-transparent transition-colors active:scale-95"
+                  className="relative z-10 flex items-center gap-2 rounded-full px-7 py-3 text-[13px] font-black uppercase tracking-widest text-white hover:bg-transparent transition-colors active:scale-95"
                 >
                   Get a Quote
                 </Link>
@@ -185,7 +185,7 @@ export default function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setMenuOpen(false)}
-                          className="block px-6 py-5 text-base font-bold text-slate-800 active:bg-blue-50 transition-colors"
+                          className="block px-6 py-5 text-base font-bold text-slate-800 active:bg-slate-50 transition-colors"
                         >
                           {item.label}
                         </Link>
@@ -201,7 +201,7 @@ export default function Header() {
                             }
                             className={`flex w-full items-center justify-between px-6 py-5 text-base font-bold transition-colors ${
                               activeDropdown === item.label
-                                ? "text-blue-600 bg-blue-50/50"
+                                ? "text-slate-600 bg-slate-50/50"
                                 : "text-slate-800"
                             }`}
                           >
@@ -225,7 +225,7 @@ export default function Header() {
                                     <Link
                                       href={sub.href}
                                       onClick={() => setMenuOpen(false)}
-                                      className="block px-12 py-4 text-sm font-bold text-slate-600 active:text-blue-600"
+                                      className="block px-12 py-4 text-sm font-bold text-slate-600 active:text-slate-600"
                                     >
                                       {sub.label}
                                     </Link>
@@ -235,7 +235,7 @@ export default function Header() {
                                   <Link
                                     href="/services"
                                     onClick={() => setMenuOpen(false)}
-                                    className="flex items-center gap-2 px-12 py-5 text-[11px] font-black text-blue-600 uppercase tracking-[0.2em]"
+                                    className="flex items-center gap-2 px-12 py-5 text-[11px] font-black text-slate-600 uppercase tracking-[0.2em]"
                                   >
                                     Explore All Services{" "}
                                     <ArrowRight className="h-3 w-3" />

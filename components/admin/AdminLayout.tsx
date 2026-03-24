@@ -88,7 +88,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </div>
 
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+            <div className="h-8 w-8 rounded-full bg-slate-600 flex items-center justify-center text-white">
               <User className="h-5 w-5" />
             </div>
           </div>

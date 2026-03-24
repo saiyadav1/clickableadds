@@ -87,10 +87,10 @@ export default function WhyChooseUs() {
             <div className="tpchoose-wrapper">
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-blue-600 font-bold uppercase tracking-widest text-xs">
+                  <span className="text-slate-600 font-bold uppercase tracking-widest text-xs">
                     Why Choose us
                   </span>
-                  <div className="w-12 h-[1px] bg-blue-600/30" />
+                  <div className="w-12 h-[1px] bg-slate-600/30" />
                 </div>
                 <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
                   What makes Us <br /> Different from Others

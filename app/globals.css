@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #0171c2; 
+  --color-secondary: #05003b; 
+  --color-thirdary: #113956;
+  --color-box-slate: #05003b;
+}
 
 #header-sticky.header-sticky {
   @apply fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50;

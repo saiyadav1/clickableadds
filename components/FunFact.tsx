@@ -11,7 +11,7 @@ export default function FunFact() {
         
         {/* HEADER SECTION - THEME BG 2 (#131683) */}
         <div className="relative rounded-[50px] overflow-hidden shadow-2xl">
-          <div className="relative pt-28 pb-44 px-8 bg-[#131683]">
+          <div className="relative pt-28 pb-44 px-8 bg-thirdary">
             
             {/* GRID IMAGE - Ensuring Visibility */}
             <div className="absolute inset-0 z-0">
@@ -23,7 +23,7 @@ export default function FunFact() {
                 className="object-cover opacity-100" 
               />
               {/* Subtle tint to bond the image to the brand color without losing the grid */}
-              <div className="absolute inset-0 bg-[#131683]/20" />
+              <div className="absolute inset-0 " />
             </div>
 
             {/* Header Content */}
@@ -35,7 +35,7 @@ export default function FunFact() {
                 className="flex flex-col items-center"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="text-blue-300 font-bold uppercase tracking-widest text-[10px] md:text-xs">
+                  <span className="text-slate-300 font-bold uppercase tracking-widest text-[10px] md:text-xs">
                     Selected Projects
                   </span>
                   <div className="w-16 h-[1px] bg-white/40" />
@@ -81,7 +81,7 @@ export default function FunFact() {
               viewport={{ once: true }}
               className="bg-white rounded-[40px] shadow-[0_40px_80px_-15px_rgba(19,22,131,0.12)] p-12 border border-slate-100 flex flex-col items-center text-center transition-all hover:-translate-y-2"
             >
-              <span className="text-[#131683] font-black uppercase tracking-widest text-[11px] mb-6 px-6 py-2 bg-blue-50 rounded-full">
+              <span className="text-[#131683] font-black uppercase tracking-widest text-[11px] mb-6 px-6 py-2 bg-slate-50 rounded-full">
                 Keywords
               </span>
               <h5 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-none">
@@ -107,7 +107,7 @@ export default function FunFact() {
               transition={{ delay: 0.1 }}
               className="bg-white rounded-[40px] shadow-[0_40px_80px_-15px_rgba(19,22,131,0.12)] p-12 border border-slate-100 flex flex-col items-center text-center transition-all hover:-translate-y-2"
             >
-              <span className="text-[#131683] font-black uppercase tracking-widest text-[11px] mb-6 px-6 py-2 bg-blue-50 rounded-full">
+              <span className="text-[#131683] font-black uppercase tracking-widest text-[11px] mb-6 px-6 py-2 bg-slate-50 rounded-full">
                 Search Volume
               </span>
               <h5 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-none">

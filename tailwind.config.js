@@ -7,6 +7,12 @@ module.exports = {
       sans: ['var(--font-jakarta)'],
       heading: ['var(--font-outfit)'],
     },
+    colors:{
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      thirdary: 'var(--color-thirdary)',
+      boxslate: 'var(--color-box-slate)',
+    }
   }, },
   plugins: [],
 }
