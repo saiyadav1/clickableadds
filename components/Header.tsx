@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Menu, X, Plus, Minus, ArrowRight } from "lucide-react";
+import { ChevronDown, Menu, X, Plus, Minus, ArrowRight, Globe } from "lucide-react";
 
 // Import your dynamic services data
 import servicesData from "@/data/services.json";
@@ -62,13 +61,31 @@ export default function Header() {
               href="/"
               className="relative z-[110] flex items-center shrink-0"
             >
-              <Image
-                src="/assets/img/logo/logo.png"
-                alt="Logo"
-                width={140}
-                height={40}
-                className="h-9 w-auto object-contain"
-              />
+              <div className="relative">
+                {/* Animated gradient border */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 4,
+                    ease: "linear",
+                  }}
+                  className="absolute -inset-0.5 rounded-full bg-gradient-to-r"
+                  style={{
+                    background:
+                      "conic-gradient(#3b82f6, #8b5cf6, #ec4899, #22c55e, #3b82f6)",
+                  }}
+                />
+                {/* Inner background */}
+                <div className="absolute inset-[2px] rounded-full bg-secondary z-0" />  
+                {/* Content */}
+                <div className="relative z-10 flex items-center gap-3 px-6 py-3">
+                  <Globe className="h-6 w-6 text-white" strokeWidth={1.5} />
+                  <span className="font-black text-white">
+                    ClickableAds
+                  </span>
+                </div>
+              </div>
             </Link>
 
             {/* --- DESKTOP NAVIGATION --- */}
