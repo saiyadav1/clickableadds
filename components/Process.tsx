@@ -8,8 +8,8 @@ const STEPS = [
     id: "01",
     title: "Strategic Discovery & Creative Research",
     subtitle: "Phase One",
-    gradient: "from-blue-600 to-indigo-600",
-    glow: "group-hover:shadow-blue-500/40",
+    gradient: "from-slate-600 to-slate-800",
+    glow: "group-hover:shadow-slate-500/40",
     isDown: false,
   },
   {
@@ -42,7 +42,7 @@ export default function Process() {
   return (
     <section className="relative py-16 bg-[#FAFAFB] overflow-hidden">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-100/30 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-slate-100/30 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-indigo-100/30 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -54,13 +54,13 @@ export default function Process() {
             viewport={{ once: true }}
           >
             <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="h-[1px] w-8 bg-blue-600" />
-              <span className="text-blue-600 text-[11px] font-black uppercase tracking-[0.4em]">How do we do it</span>
-              <span className="h-[1px] w-8 bg-blue-600" />
+              <span className="h-[1px] w-8 bg-primary" />
+              <span className="text-primary  text-[11px] font-black uppercase tracking-[0.4em]">How do we do it</span>
+              <span className="h-[1px] w-8 bg-primary" />
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-[#05003b] tracking-tighter leading-tight">
               A precise roadmap to <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-indigo-600 to-purple-600">
                 Digital Excellence
               </span>
             </h2>
@@ -122,10 +122,10 @@ export default function Process() {
 
                   {/* Text Content */}
                   <div className="text-center px-6">
-                    <span className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500/60 mb-3 block">
+                    <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]  mb-3  group-hover:text-primary transition-colors duration-300">
                       {step.subtitle}
                     </span>
-                    <h4 className="text-lg font-bold text-[#05003b] leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                    <h4 className="text-lg font-bold text-slate-400 leading-tight group-hover:text-primary transition-colors duration-300">
                       {step.title}
                     </h4>
                   </div>

@@ -17,7 +17,7 @@ export default function LocationSection() {
             */}
             <div className="absolute inset-0 bg-slate-200 animate-pulse flex items-center justify-center">
                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto shadow-lg shadow-blue-600/40">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto shadow-lg shadow-primary/40">
                     <MapPin className="text-white" size={32} />
                   </div>
                   <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Interactive Map Loading...</p>
@@ -39,18 +39,18 @@ export default function LocationSection() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
-                  <MapPin className="text-blue-600" size={20} />
+                <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center shrink-0">
+                  <MapPin className="text-slate-600" size={20} />
                 </div>
                 <div>
                   <h5 className="font-bold text-slate-900">Address</h5>
-                  <p className="text-slate-500 text-sm">123 Digital Ave, Suite 400<br />New York, NY 10001</p>
+                  <p className="text-slate-500 text-sm">H.No 10-838/5, Netaji Nagar, Nagaram, Hyderabad-500083, Telangana India.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
-                  <Train className="text-indigo-600" size={20} />
+                  <Train className="text-slate-600" size={20} />
                 </div>
                 <div>
                   <h5 className="font-bold text-slate-900">Public Transit</h5>
@@ -65,7 +65,7 @@ export default function LocationSection() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-3 bg-[#05003b] text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:bg-blue-600 transition-all"
+              className="inline-flex items-center gap-3 bg-[#05003b] text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:bg-primary transition-all"
             >
               Start Navigation
               <Navigation size={18} />

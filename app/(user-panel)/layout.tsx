@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   title: "Seomy Digital Marketing",
   description: "SEO & Digital Marketing Agency",
   metadataBase: new URL("https://clickableadds.com"),
+  icons: {
+    icon: "/assets/img/logo/logo.png", // For browsers
+    shortcut: "/assets/img/logo/logo.png", 
+    apple: "/assets/img/logo/logo.png", // For iOS home screen
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

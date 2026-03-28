@@ -39,7 +39,7 @@ export default function TestimonialSection() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center bg-[#0B0F19] overflow-hidden">
       {/* Dynamic Background Glows */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
 
       {/* Main Content Wrapper */}
@@ -56,7 +56,7 @@ export default function TestimonialSection() {
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-            Client love us & <span className="text-blue-500">we love them</span>
+            Client love us & <span className="text-slate-500">we love them</span>
           </h2>
           <div className="flex items-center justify-center gap-4">
             <div className="h-px w-8 bg-slate-700" />
@@ -90,7 +90,7 @@ export default function TestimonialSection() {
                     
                     {/* Compact Profile */}
                     <div className="relative w-36 h-36 md:w-48 md:h-48 shrink-0">
-                      <div className="absolute inset-0 bg-blue-600 rounded-full blur-2xl opacity-20" />
+                      <div className="absolute inset-0 bg-primary rounded-full blur-2xl opacity-20" />
                       <div className="relative w-full h-full rounded-full border-2 border-white/10 overflow-hidden shadow-2xl">
                         <Image
                           src={item.image}
@@ -99,7 +99,7 @@ export default function TestimonialSection() {
                           className="object-cover"
                         />
                       </div>
-                      <div className="absolute -bottom-1 -right-1 bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center shadow-lg border-2 border-[#0B0F19]">
+                      <div className="absolute -bottom-1 -right-1 bg-primary h-10 w-10 rounded-full flex items-center justify-center shadow-lg border-2 border-[#0B0F19]">
                         <svg width="14" height="10" viewBox="0 0 40 30" fill="white">
                           <path d="M24.23 29.04c3.64-2.14 6.53-5.08 8.68-8.82C35.06 16.48 36.14 12.62 36.14 8.6V0h-9.03v8.34c0 1.82.59 3.32 1.77 4.49 1.18 1.18 2.84 1.77 4.98 1.77-1.07 3.64-3.57 7.5-7.5 11.58zM0 8.6V0h9.03v8.34c0 1.82-.59 3.32-1.77 4.49-1.18 1.18-2.84 1.77-4.98 1.77 1.07 3.64 3.57 7.5 7.5 11.58L2.99 29.04C-.65 26.9-3.54 23.96-5.69 20.22-7.84 16.48-8.92 12.62-8.92 8.6z" />
                         </svg>
@@ -116,7 +116,7 @@ export default function TestimonialSection() {
                         <h5 className="text-white font-bold text-xl tracking-tight">
                           {item.name}
                         </h5>
-                        <span className="text-blue-500 text-xs font-black uppercase tracking-[0.2em]">
+                        <span className="text-slate-500 text-xs font-black uppercase tracking-[0.2em]">
                           {item.role}
                         </span>
                       </div>
@@ -129,10 +129,10 @@ export default function TestimonialSection() {
 
           {/* Symmetrical Floating Navigation */}
           <div className="absolute -bottom-14 md:bottom-1/2 md:-translate-y-1/2 left-0 right-0 md:-left-20 md:-right-20 flex md:flex-col justify-center gap-6 md:gap-4">
-            <button className="prev-testimonial w-12 h-12 rounded-full bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-blue-600 transition-all duration-300 backdrop-blur-md">
+            <button className="prev-testimonial w-12 h-12 rounded-full bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-primary transition-all duration-300 backdrop-blur-md">
               <span className="text-sm">←</span>
             </button>
-            <button className="next-testimonial w-12 h-12 rounded-full bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-blue-600 transition-all duration-300 backdrop-blur-md">
+            <button className="next-testimonial w-12 h-12 rounded-full bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-primary transition-all duration-300 backdrop-blur-md">
               <span className="text-sm">→</span>
             </button>
           </div>

@@ -87,10 +87,10 @@ export default function WhyChooseUs() {
             <div className="tpchoose-wrapper">
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-blue-600 font-bold uppercase tracking-widest text-xs">
+                  <span className="text-primary font-bold uppercase tracking-widest text-xs">
                     Why Choose us
                   </span>
-                  <div className="w-12 h-[1px] bg-blue-600/30" />
+                  <div className="w-12 h-[1px] bg-primary/30" />
                 </div>
                 <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
                   What makes Us <br /> Different from Others
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
                   <Link 
                     key={item.id} 
                     href={item.link}
-                    className="group relative bg-slate-50/50 p-6 rounded-[2rem] border border-slate-200 transition-all duration-500 hover:bg-[#131683] hover:border-[#131683] hover:-translate-y-2 shadow-sm hover:shadow-2xl"
+                    className="group relative bg-slate-50/50 p-6 rounded-[2rem] border border-slate-200 transition-all duration-500 hover:bg-primary hover:border-primary hover:-translate-y-2 shadow-sm hover:shadow-2xl"
                   >
                     <div className="mb-5 w-12 h-12 bg-white rounded-2xl flex items-center justify-center group-hover:bg-white/10 transition-colors border border-slate-100 shadow-sm">
                       <Image 

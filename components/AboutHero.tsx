@@ -11,7 +11,7 @@ export default function AboutHero() {
       {/* --- BACKGROUND SHAPE LAYER --- */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Soft Ambient Glows */}
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-50 rounded-full blur-[120px] opacity-60" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-slate-50 rounded-full blur-[120px] opacity-60" />
         <div className="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-indigo-50 rounded-full blur-[100px] opacity-60" />
         
         {/* Geometric Background Shapes (Static) */}
@@ -37,7 +37,7 @@ export default function AboutHero() {
                   rotate: [0, 90, 0]
                 }}
                 transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0 bg-blue-600/5 -m-10 z-0"
+                className="absolute inset-0 bg-primary/5 -m-10 z-0"
               />
 
               {/* MAIN IMAGE: Premium Frame */}
@@ -65,7 +65,7 @@ export default function AboutHero() {
                 className="absolute -bottom-6 -right-6 z-20 bg-[#05003b] text-white p-10 rounded-[2.5rem] shadow-2xl"
               >
                 <div className="relative">
-                  <span className="text-5xl font-black block mb-1">12<span className="text-blue-500">+</span></span>
+                  <span className="text-5xl font-black block mb-1">12<span className="text-slate-500">+</span></span>
                   <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 block whitespace-nowrap">
                     Years of Excellence
                   </span>
@@ -84,19 +84,19 @@ export default function AboutHero() {
                 viewport={{ once: true }}
               >
                 <div className="flex items-center gap-4 mb-8">
-                  <span className="h-px w-12 bg-blue-600" />
-                  <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px]">
+                  <span className="h-px w-12 bg-primary" />
+                  <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px]">
                     The Agency Mission
                   </span>
                 </div>
 
                 <h1 className="text-5xl md:text-7xl font-black text-[#05003b] leading-[1] mb-10 tracking-tighter">
                   Working Hard <br />
-                  To Make <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 italic">SEO Easy.</span>
+                  To Make <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-500 italic">SEO Easy.</span>
                 </h1>
 
                 <div className="space-y-8">
-                  <p className="text-xl md:text-2xl text-slate-700 font-semibold leading-relaxed border-l-4 border-blue-600 pl-6">
+                  <p className="text-xl md:text-2xl text-slate-700 font-semibold leading-relaxed border-l-4 border-primary pl-6">
                     Our mission is to help businesses grow their online 
                     presence by delivering transparent, results-driven solutions.
                   </p>
@@ -108,10 +108,10 @@ export default function AboutHero() {
 
                 {/* Buttons & CTA */}
                 <div className="flex flex-wrap items-center gap-8 mt-12">
-                  <Link href="/contact" className="px-10 py-5 bg-[#05003b] text-white rounded-2xl font-bold uppercase tracking-[0.2em] text-[10px] transition-all hover:bg-blue-600 shadow-[0_20px_40px_rgba(5,0,59,0.2)] active:scale-95">
+                  <Link href="/contact" className="px-10 py-5 bg-primary text-white rounded-2xl font-bold uppercase tracking-[0.2em] text-[10px] transition-all hover:bg-black/80 shadow-[0_20px_40px_rgba(5,0,59,0.2)] active:scale-95">
                     Start Your Journey
                   </Link>
-                  <Link href="/services" className="group flex items-center gap-3 text-[#05003b] font-black text-sm uppercase tracking-widest">
+                  <Link href="/services" className="group flex items-center gap-3 text-primary font-black text-sm uppercase tracking-widest">
                     Our Expertise
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="transition-transform group-hover:translate-x-2">
                       <path d="M5 12h14M12 5l7 7-7 7" />

@@ -33,10 +33,10 @@ export default function Analysis() {
             viewport={{ once: true }}
             className="flex flex-col items-center mb-4"
           >
-            <span className="text-blue-600 font-bold tracking-widest uppercase text-xs mb-2">
+            <span className="text-primary font-bold tracking-widest uppercase text-xs mb-2">
               SEO Agency of the Year
             </span>
-            <div className="w-16 h-1 bg-blue-600 rounded-full" />
+            <div className="w-16 h-1 bg-primary rounded-full" />
           </motion.div>
           
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
@@ -50,7 +50,7 @@ export default function Analysis() {
 
         {/* Toggle Switch */}
         <div className="flex justify-center items-center gap-6 mb-20">
-          <span className={`text-sm font-bold transition-colors duration-300 ${!isAfter ? "text-blue-600" : "text-slate-400"}`}>
+          <span className={`text-sm font-bold transition-colors duration-300 ${!isAfter ? "text-primary" : "text-slate-400"}`}>
             BEFORE SEO
           </span>
           <button
@@ -61,10 +61,10 @@ export default function Analysis() {
             <motion.div
               animate={{ x: isAfter ? 32 : 0 }}
               transition={{ type: "spring", stiffness: 500, damping: 30 }}
-              className="w-6 h-6 bg-blue-600 rounded-full shadow-lg"
+              className="w-6 h-6 bg-primary rounded-full shadow-lg"
             />
           </button>
-          <span className={`text-sm font-bold transition-colors duration-300 ${isAfter ? "text-blue-600" : "text-slate-400"}`}>
+          <span className={`text-sm font-bold transition-colors duration-300 ${isAfter ? "text-primary" : "text-slate-400"}`}>
             AFTER SEO
           </span>
         </div>
@@ -84,7 +84,7 @@ export default function Analysis() {
                     transition={{ duration: 0.2, delay: index * 0.05 }}
                     className="text-center"
                   >
-                    <h3 className="text-3xl md:text-4xl font-black text-blue-600 mb-2">
+                    <h3 className="text-3xl md:text-4xl font-black text-primary mb-2">
                       {stat.value}{stat.suffix}
                     </h3>
                     <p className="text-slate-500 font-semibold tracking-wide uppercase text-xs md:text-sm">

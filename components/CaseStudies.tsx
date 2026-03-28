@@ -50,9 +50,9 @@ export default function CaseStudies() {
       <div className="mx-auto max-w-7xl px-4 mb-14">
         <div className="flex flex-wrap items-end gap-y-6">
           <div className="w-full md:w-2/3 lg:w-1/2">
-            <span className="mb-4 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-blue-600">
+            <span className="mb-4 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-primary">
               Featured Projects
-              <span className="h-[2px] w-12 bg-blue-600/20" />
+              <span className="h-[2px] w-12 bg-primary/20" />
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
               Our Case Studies
@@ -63,13 +63,13 @@ export default function CaseStudies() {
           <div className="hidden md:flex w-full md:w-1/3 lg:w-1/2 justify-end gap-3">
             <button
               onClick={() => swiperInstance?.slidePrev()}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 transition-all duration-300 hover:bg-blue-600 hover:text-white"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 transition-all duration-300 hover:bg-primary hover:text-white"
             >
               ←
             </button>
             <button
               onClick={() => swiperInstance?.slideNext()}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 transition-all duration-300 hover:bg-blue-600 hover:text-white"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 transition-all duration-300 hover:bg-primary hover:text-white"
             >
               →
             </button>
@@ -113,7 +113,7 @@ export default function CaseStudies() {
                 <div className="absolute bottom-0 z-10 p-6 md:p-8">
                   <div className="mb-3 flex flex-wrap gap-2">
                     {item.tags.map((tag) => (
-                      <span key={tag} className="rounded-full bg-blue-600 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-white">
+                      <span key={tag} className="rounded-full bg-primary px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-white">
                         {tag}
                       </span>
                     ))}

@@ -62,7 +62,7 @@ export default function CounterSection() {
         <div className="relative border border-slate-100 rounded-[3rem] p-12 md:p-20 bg-slate-50/30 overflow-hidden">
           
           {/* Subtle Background Lighting */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-blue-50/50 to-transparent pointer-events-none" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-slate-50/50 to-transparent pointer-events-none" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 relative z-10">
             {COUNTER_DATA.map((item, index) => (
@@ -91,7 +91,7 @@ export default function CounterSection() {
                 <div className="flex items-center gap-4">
                   <div className="flex items-center text-4xl md:text-5xl font-black text-[#05003b] tracking-tighter">
                     <CountUp end={item.count} />
-                    <FaPlus className="text-blue-600 text-2xl ml-1" />
+                    <FaPlus className="text-primary text-2xl ml-1" />
                   </div>
                   
                   <div className="h-10 w-[1px] bg-slate-200 mx-2 hidden sm:block" />

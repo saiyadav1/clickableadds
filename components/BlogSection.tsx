@@ -12,7 +12,7 @@ export default function BlogSection() {
   return (
     <section className="relative py-32 bg-[#F8FAFC] overflow-hidden flex justify-center">
       {/* Abstract Background Elements */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-slate-100/40 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-100/40 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="w-[85%] max-w-7xl relative z-10">
@@ -26,14 +26,14 @@ export default function BlogSection() {
               viewport={{ once: true }}
               className="flex items-center gap-3 mb-6"
             >
-              <span className="bg-blue-600 w-10 h-[2px]" />
-              <span className="text-blue-600 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs">
+              <span className="bg-primary w-10 h-[2px]" />
+              <span className="text-primary font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs">
                 Insights & Journal
               </span>
             </motion.div>
             <h2 className="text-4xl md:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
               Latest blog & <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#131683] to-blue-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary">
                 news updates
               </span>
             </h2>
@@ -92,7 +92,7 @@ export default function BlogSection() {
                 {/* Footer Section */}
                 <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="relative w-11 h-11 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-[#131683] to-blue-400">
+                    <div className="relative w-11 h-11 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-[#131683] to-slate-400">
                       <div className="w-full h-full rounded-full overflow-hidden relative border-2 border-white">
                         <Image 
                           src={blog.authorImg} 
