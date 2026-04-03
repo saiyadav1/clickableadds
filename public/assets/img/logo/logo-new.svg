@@ -1,0 +1,26 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="50" rx="8" fill="url(#gradient)"/>
+
+  <!-- ClickableAds Text -->
+  <text x="10" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    clickableAds
+  </text>
+
+  <!-- Solution Text -->
+  <text x="10" y="35" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#E0E0E0">
+    Solution
+  </text>
+
+  <!-- Click Icon -->
+  <circle cx="160" cy="25" r="12" fill="white" opacity="0.9"/>
+  <path d="M152 25L158 31L170 19" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

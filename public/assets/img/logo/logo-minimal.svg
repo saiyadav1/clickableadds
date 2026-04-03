@@ -1,0 +1,18 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- ClickableAds Text -->
+  <text x="0" y="18" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1F2937">
+    clickableAds
+  </text>
+
+  <!-- Solution Text -->
+  <text x="0" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#6B7280">
+    Solution
+  </text>
+
+  <!-- Simple Click Icon -->
+  <g transform="translate(160, 8)">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#2563EB" stroke-width="2"/>
+    <circle cx="12" cy="12" r="3" fill="#2563EB"/>
+    <path d="M8 12L12 16L18 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

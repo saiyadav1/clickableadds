@@ -67,11 +67,11 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               <Image
-                src="/assets/img/logo/logo.png"
-                alt="Logo"
-                width={140}
-                height={40}
-                className="h-8 w-auto object-contain"
+                src="/assets/img/logo/logo-professional.svg"
+                alt="clickableAds Solution Logo"
+                width={200}
+                height={45}
+                className="h-10 w-auto object-contain"
               />
             </Link>
 

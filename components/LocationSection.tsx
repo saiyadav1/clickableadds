@@ -11,19 +11,17 @@ export default function LocationSection() {
           
           {/* Left: Map/Visual Side */}
           <div className="lg:col-span-7 h-[450px] relative rounded-[3rem] overflow-hidden shadow-2xl group">
-            {/* REPLACEMENT NOTE: 
-              Replace the div below with an actual Google Maps iframe 
-              or a library like 'react-google-maps'.
-            */}
-            <div className="absolute inset-0 bg-slate-200 animate-pulse flex items-center justify-center">
-               <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto shadow-lg shadow-primary/40">
-                    <MapPin className="text-white" size={32} />
-                  </div>
-                  <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Interactive Map Loading...</p>
-               </div>
-            </div>
-            
+            <iframe
+              title="Clickable Ads Solutions Location"
+              src="https://www.google.com/maps?q=Clickable+Ads+Solutions,+H+No+10-838/5,+Rd+Number+1,+Nethaji+Nagar,+Nagaram,+Secunderabad,+Telangana+500083&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#05003b]/20 to-transparent pointer-events-none" />
           </div>
@@ -43,12 +41,12 @@ export default function LocationSection() {
                   <MapPin className="text-slate-600" size={20} />
                 </div>
                 <div>
-                  <h5 className="font-bold text-slate-900">Address</h5>
+                  <h5 className="font-bold text-slate-900">Office Address</h5>
                   <p className="text-slate-500 text-sm">H.No 10-838/5, Netaji Nagar, Nagaram, Hyderabad-500083, Telangana India.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
                   <Train className="text-slate-600" size={20} />
                 </div>
@@ -56,11 +54,11 @@ export default function LocationSection() {
                   <h5 className="font-bold text-slate-900">Public Transit</h5>
                   <p className="text-slate-500 text-sm">2 min walk from Central Tech Station<br />Lines A, C, and E</p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <motion.a 
-              href="https://www.google.com/maps/search/?api=1&query=123+Digital+Ave+New+York+NY"
+              href="https://www.google.com/maps/search/?api=1&query=Clickable+Ads+Solutions,+H+No+10-838/5,+Rd+Number+1,+Nethaji+Nagar,+Nagaram,+Secunderabad,+Telangana+500083"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}

@@ -19,7 +19,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Seomy Digital Marketing",
+  title: "Clickable Ads Solutions - SEO & Digital Marketing Agency",
   description: "SEO & Digital Marketing Agency",
   metadataBase: new URL("https://clickableadds.com"),
   icons: {

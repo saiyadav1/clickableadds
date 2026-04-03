@@ -57,7 +57,7 @@ export default function Hero() {
               className="flex flex-col items-center mb-6"
             >
               <span className="text-primary font-bold tracking-wide uppercase text-sm mb-2">
-                Welcome To Seomy
+                Welcome To Clickable Ads Solutions
               </span>
               <div className="w-24 h-1 bg-primary rounded-full relative">
                 <motion.div
